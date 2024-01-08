@@ -1,5 +1,7 @@
-import Link from "next/link"
+"use client";
 
+import Link from "next/link"
+import PasswordStrengthBar from 'react-password-strength-bar';
 import { siteConfig } from "@/config/site"
 import { buttonVariants } from "@/components/ui/button"
 
