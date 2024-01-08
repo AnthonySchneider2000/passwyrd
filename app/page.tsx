@@ -17,8 +17,7 @@ export default function IndexPage() {
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
       <div className="flex flex-col gap-4">
         <Input
-          // type={showPassword ? "text" : "password"}
-          type="text"
+          type={showPassword ? "text" : "password"}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Enter password"
@@ -27,9 +26,7 @@ export default function IndexPage() {
         <div className="items-top flex space-x-2">
           <Checkbox
             id="displayPasswordCheckbox"
-            onChange={() => setShowPassword(!showPassword)}
-            disabled
-            checked={true}
+            onCheckedChange={() => setShowPassword(!showPassword)}
           >
             Show Password
           </Checkbox>
